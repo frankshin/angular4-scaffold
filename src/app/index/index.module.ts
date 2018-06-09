@@ -1,5 +1,11 @@
 
+/**
+ * 
+ * modules
+ * 
+ */
 import { NgModule } from '@angular/core'
+import { BrowserModule } from '@angular/platform-browser';
 
 /**
  * components
@@ -10,7 +16,9 @@ import { IndexComponent } from './index-list/index.component';
     declarations: [
         IndexComponent
     ],
-    imports: [],
+    imports: [
+        BrowserModule
+    ],
     providers: []
 })
 export class IndexModule{}

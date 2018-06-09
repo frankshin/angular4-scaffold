@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core'
  * files
  */
 const aboutComponnetHtml = require('./about.html');
-const aboutComponnetCss = require('./about.component.css');
+const aboutComponnetCss = require('./about.css');
 
 @Component({
     selector: '',
