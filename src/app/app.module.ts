@@ -8,25 +8,26 @@ import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
+import { AboutModule } from './about/about.module'
+import { IndexModule } from './index/index.module'
 
 /**
  * components
  */
 import { AppComponent } from './app.component';
-import { IndexComponent } from './index/index-list/index.component';
-import { AboutComponent } from './about/about-list/about.component';
+import { importType } from '@angular/compiler/src/output/output_ast';
 
 
 @NgModule({
   declarations: [
-      AppComponent,
-      IndexComponent,
-      AboutComponent
+      AppComponent
   ],
   imports: [
       HttpClientModule,
       BrowserModule,
-      AppRoutingModule
+      AppRoutingModule,
+      AboutModule,
+      IndexModule
   ],
   providers: [],
   bootstrap: [AppComponent]

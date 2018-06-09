@@ -1,9 +1,9 @@
-import { Component } from '@angular/core'
+import { Component, OnInit } from '@angular/core'
 
 /**
  * files
  */
-const aboutComponnetHtml = require('./about.component.html');
+const aboutComponnetHtml = require('./about.html');
 const aboutComponnetCss = require('./about.component.css');
 
 @Component({
@@ -12,6 +12,15 @@ const aboutComponnetCss = require('./about.component.css');
     styles: [String(aboutComponnetCss)]
 })
 
-export class AboutComponent {
+export class AboutComponent implements OnInit{
+    currentHero: any = '';
     //
+    
+    ngOnInit() {
+        this.initPage();
+    }
+
+    initPage() {
+        // console.log(this.currentHero);
+    }
 }

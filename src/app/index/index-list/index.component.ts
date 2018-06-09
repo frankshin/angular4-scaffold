@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core'
 /**
  * files
  */
-const indexComponnetHtml = require('./index.component.html');
+const indexComponnetHtml = require('./index.html');
 const indexComponnetCss = require('./index.component.css');
 
 @Component({
@@ -23,6 +23,6 @@ export class IndexComponent implements OnInit{
      * 测试mouse hover的监听
      */
     test() {
-        console.error('dfdsfdsf');
+        // console.error('dfdsfdsf');
     }
 }
